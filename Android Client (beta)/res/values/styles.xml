@@ -1,0 +1,165 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <style name="shadowed">
+		<item name="android:shadowColor">@color/shadow_color</item>
+    	<item name="android:shadowDx">0</item>
+    	<item name="android:shadowDy">2</item>
+    	<item name="android:shadowRadius">1</item>
+    </style>
+	<style name="textStatus">
+	    <item name="android:textColor">@color/text_splash</item>
+	    <item name="android:textSize">16dp</item>
+	</style>
+	<style name="textList">
+	    <item name="android:textColor">@color/text_list</item>
+	    <item name="android:textSize">16dp</item>
+	</style>
+	<style name="inputText">
+	    <item name="android:background">@drawable/input_text</item>
+	    <item name="android:textColorHint">@color/text_hint</item>
+	    <item name="android:paddingLeft">20dp</item>
+	    <item name="android:paddingRight">20dp</item>
+	    <item name="android:paddingTop">10dp</item>
+	    <item name="android:paddingBottom">10dp</item>
+	    <item name="android:textSize">18dp</item>
+	    <item name="android:layout_marginLeft">20dp</item>
+	    <item name="android:layout_marginRight">20dp</item>
+	</style>
+	<style name="inputRegistration">
+	    <item name="android:background">@drawable/input_registration</item>
+	    <item name="android:textColorHint">@color/text_hint</item>
+	    <item name="android:paddingLeft">20dp</item>
+	    <item name="android:paddingRight">20dp</item>
+	    <item name="android:paddingTop">15dp</item>
+	    <item name="android:paddingBottom">15dp</item>
+	    <item name="android:textSize">20dp</item>
+	    <item name="android:layout_marginLeft">20dp</item>
+	    <item name="android:layout_marginRight">20dp</item>
+	    <item name="android:layout_marginTop">8dp</item>
+	    <item name="android:layout_marginBottom">8dp</item>
+	</style>
+	<style name="inputCheckbox">
+	    <item name="android:button">@drawable/input_checkbox</item>
+	    <item name="android:textSize">16dp</item>
+	    <item name="android:layout_marginLeft">20dp</item>
+	    <item name="android:layout_marginRight">20dp</item>
+	    <item name="android:paddingTop">10dp</item>
+	    <item name="android:paddingBottom">10dp</item>
+	    <item name="android:layout_centerVertical">true</item>
+	</style>
+	<style name="inputButton" parent="@style/shadowed">
+		<item name="android:background">@drawable/input_button</item>
+		<item name="android:textSize">18dp</item>
+		<item name="android:textColor">@color/button_text_colors</item>
+	</style>
+	<style name="inputToggle" parent="@style/shadowed">
+		<item name="android:background">@drawable/state_button</item>
+		<item name="android:width">65px</item>
+		<item name="android:textSize">18dp</item>
+		<item name="android:textColor">@color/button_text_colors</item>
+	</style>
+	<style name="dragButton">
+	    <item name="android:background">@drawable/input_drag</item>
+	</style>
+	<style name="listElement" parent="@style/shadowed">
+	    <item name="android:background">@drawable/panel_base</item>
+	    <item name="android:textColor">@color/panel_text_colors</item>
+	</style>
+	<style name="newsElement" parent="@style/shadowed">
+	    <item name="android:background">@drawable/panel_news</item>
+	    <item name="android:textColor">@color/panel_text_colors</item>
+	    <item name="android:layout_marginTop">-5dp</item>
+	</style>
+	<style name="statusBox" parent="@style/shadowed">
+	    <item name="android:background">@drawable/status_green</item>
+	    <item name="android:textSize">15dp</item>
+	    <item name="android:textColor">@color/button_text_colors</item>
+	</style>	
+	<style name="toolbarBox" parent="@style/shadowed">
+	    <item name="android:background">@drawable/status_green</item>
+	    <item name="android:textSize">15dp</item>
+	    <item name="android:paddingTop">0dp</item>
+	    <item name="android:textColor">@color/toolbar_text_colors</item>
+	</style>	
+	<style name="toolbarStream" parent="toolbarBox">
+	    <item name="android:background">@drawable/toolbar_stream</item>
+	</style>
+	<style name="toolbarCases" parent="toolbarBox">
+	    <item name="android:background">@drawable/toolbar_cases</item>
+	</style>
+	<style name="toolbarHelp" parent="toolbarBox">
+	    <item name="android:background">@drawable/toolbar_faq</item>
+	    <item name="android:textColor">@color/button_text_colors</item> 
+	</style>
+        <style name="toolbarSettings" parent="toolbarBox">
+	    <item name="android:background">@drawable/toolbar_settings</item>
+	    <item name="android:textColor">@color/button_text_colors</item> 
+	</style>
+        <style name="toolbarArrived" parent="toolbarBox">
+	    <item name="android:background">@drawable/toolbar_cases</item>
+	    <item name="android:textColor">@color/button_text_colors</item> 
+            <item name="android:textStyle">bold</item> 
+	</style>
+	<style name="toolbarLogout" parent="toolbarBox">
+	    <item name="android:background">@drawable/toolbar_logout</item>
+	    <item name="android:textColor">@color/button_text_colors</item> 
+	</style>
+	<style name="toolbarRoute" parent="toolbarBox">
+	    <item name="android:background">@drawable/toolbar_route</item>
+	</style>
+	<style name="toolbarVolunteers" parent="toolbarBox">
+	    <item name="android:background">@drawable/toolbar_volunteer</item>
+	</style>
+	<style name="toolbarAutozoom" parent="toolbarBox">
+	    <item name="android:background">@drawable/toolbar_autozoom</item>
+	</style>
+	<style name="emptyCase">
+	    <item name="android:textSize">18dp</item>
+	    <item name="android:paddingTop">15dp</item>
+	    <item name="android:paddingBottom">15dp</item>
+	    <item name="android:paddingLeft">15dp</item>
+	    <item name="android:paddingRight">15dp</item>
+	    <item name="android:textColor">@color/base_transblack</item>
+	</style>
+	<style name="emptyNews" parent="@style/emptyCase">
+	</style>
+	<style name="caseAddress">
+	    <item name="android:textSize">19dp</item>
+	    <item name="android:textColor">@color/base_transblack</item>
+	</style>
+	<style name="caseAddressWhite" parent="@style/shadowed">
+	    <item name="android:textSize">19dp</item>
+	    <item name="android:textColor">@color/base_white</item>
+	</style>
+	<style name="caseValues" parent="@style/shadowed">
+		<item name="android:textSize">19dp</item>
+	    <item name="android:textColor">@color/base_white</item>
+	    <item name="android:textStyle">bold</item>
+	    <item name="android:layout_marginRight">5dp</item>
+	    <item name="android:layout_marginLeft">5dp</item>
+	</style>
+	<style name="caseSpec" parent="@style/shadowed">
+		<item name="android:textSize">14dp</item>
+	    <item name="android:textColor">@color/base_white</item>
+	</style>
+	<style name="newsTitle">
+	    <item name="android:textSize">15dp</item>
+	    <item name="android:textColor">@color/base_transblack</item>
+	</style>
+	<style name="newsAutor">
+	    <item name="android:textSize">11dp</item>
+	    <item name="android:textColor">@color/base_transparent_grey</item>
+	</style>
+	<style name="mapsLockOverlay">
+		<item name="android:background">@color/base_semiblack</item>
+	</style>
+	
+	<style name="mapsMenuTop">
+		<item name="android:layout_height">76dp</item>
+		<item name="android:background">@drawable/menu_top</item>
+	</style>
+	
+	<style name="mapsMenuBottom">
+		<item name="android:layout_height">76dp</item>
+		<item name="android:background">@drawable/menu_bottom</item>
+	</style>
+</resources>

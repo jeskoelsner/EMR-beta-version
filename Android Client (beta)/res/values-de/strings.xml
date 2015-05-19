@@ -1,0 +1,143 @@
+<resources>
+
+    <string name="app_name">Emurgency</string>
+    <string name="full_app_name">EMuRgency</string>
+    <string name="menu_settings">Optionen</string>
+    <string name="title_activity_splash">Emurgency</string>
+    
+    <!-- Settings -->
+    <string name="menu_soundforce_type_alarm">Alarm trotz Lautlos</string>
+    <string name="menu_soundforce_type_vibrate">Vibration trotz Lautlos</string>
+    <string name="menu_soundforce_type_native">Systemlautstärke beibehalten</string>
+    <string name="menu_soundforce_type">Alarmierungsverhalten</string>
+    <string name="menu_soundforce_length">Alarmierungsdauer</string>
+    <string name="menu_soundforce_volume">Lautstärke einstellen</string>
+    
+    <string name="case_notification">Notfall erhalten</string>
+    
+    <string name="splashscreen_checking_connection">Prüfe internetverbindung&#8230;</string>
+    <string name="splashscreen_checking_downtime">Keine Internetverbindung bzw. EMuRgency server nicht erreichbar ?!</string>
+
+	<string name="login_email_hint">Email</string>
+	<string name="login_passwort_hint">Passwort</string>
+	<string name="login_save_hint">Speichere Email für zukünftige Anmeldung</string>
+	
+	<string name="button_login_text">Anmelden</string>
+	<string name="button_help">Hilfe</string>
+	<string name="button_register_text">Registrieren</string>
+	<string name="button_registersubmit_text">Registrierung abschicken</string>
+	
+	<string name="dashboard_toggle_on"><i>Info</i> <b> </b> <b>Fall</b></string>
+	<string name="dashboard_toggle_off"><b>Info</b> <b> </b> <i>Fall</i></string>
+	
+	<string name="user_verified">Benutzer\nStatus</string>
+	
+	<string name="toolbar_stream">News</string>
+	<string name="toolbar_cases">Fälle</string>
+	<string name="toolbar_help">Schnellhilfe</string>
+        <string name="toolbar_settings">Optionen</string>
+        <string name="toolbar_arrived">Am Fall angekommen!</string>
+	<string name="toolbar_logout">Abmelden</string>
+	<string name="toolbar_volunteers">Helfer</string>
+	<string name="toolbar_route">Route</string>
+	<string name="toolbar_autozoom">Autozoom</string>
+	
+	<string name="case_volunteers">Helfer</string>
+	<string name="case_time">Min.</string>
+	<string name="case_distance_meters">m</string>
+	<string name="case_distance_kilometers">km</string>
+	<string name="case_distance_meters_full">Meter</string>
+	<string name="case_distance_kilometers_full">Kilom.</string>
+	
+	<string name="unlocker_text">Schieben zum annehmen</string>
+        
+    <!-- Bubbles -->
+    <string name="bubble_waiting_activity_stream">Warten auf den Activity Stream...</string>
+    <string name="bubble_no_sim">KEINE SIM\nErwartete langsame Lokalisierungsupdates</string>
+    <string name="bubble_status_level_prefix">Statuslevel: </string>
+    <string name="bubble_result_null">Resultat: NULL</string>
+    <string name="bubble_backbutton_disabled">Zurück Knopf Deaktiviert\nDu hast den Fall bereits angenommen</string>
+    <string name="bubble_homebutton_disabled">Home Knopf Deaktiviert\nDu hast den Fall bereits angenommen</string>
+                	
+    <!-- Dialog -->
+    <string name="dialog_logout_title">Abmeldung</string>
+    <string name="dialog_logout_message">Möchtest du dich wirklich abmelden?</string>
+    <string name="dialog_quit_title">Emurgency Verlassen</string>
+    <string name="dialog_quit_message">Möchtest du wirklich die Anwendung verlassen?</string>
+    <string name="dialog_visit_title">Homepage besuchen</string>
+    <string name="dialog_visit_message">Möchtest du die Emurgency Homepage besuchen?</string>
+    
+    <string name="dialog_resolution_error_title">Verbindungsfehler</string>
+    <string name="dialog_resolution_error_message">Lösung für den Google Play Services Verbindungsfehler gefunden... Verbinde erneut!</string>
+    <string name="dialog_resolution_notfound_message">Verbindung fehlgeschlagen. Lösung nicht gefunden.</string>
+    
+    <string name="dialog_playservice_disconnected_title">Nicht verbunden</string>
+    <string name="dialog_playservice_disconnected_message">Google Play Service nicht verbunden...</string>
+    
+    <string name="dialog_update_title">Update verfügbar</string>
+    <string name="dialog_update_message">Aktuelle Version dieser App verfügbar. Wollen Sie diese installieren?</string>
+	
+    <!-- Form Hints --><!-- TODO FIX NAMES! UNDERSCORES WANTED -->
+    <string name="regFirstNameHint">Vorname</string>
+    <string name="regLastNameHint">Nachname</string>
+    <string name="regEmailHint">Email Adresse</string>
+    <string name="regPassHint">Passwort</string>
+    <string name="regPassValidHint">Wiederhole Passwort</string>
+    
+    <string name="empty_case">Momentan keine aktiven Fälle&#8230;</string>
+    
+    <!-- Validation Pattern Check -->
+	<string-array name="validation_patterns">
+        <item name="check_email">([a-zA-Z0-9_.-\+])+@(([a-zA-Z0-9-])+.)+([a-zA-Z0-9]{2,4})+</item>
+        <item name="check_firstname">[a-zA-Z]{3,12}</item>
+        <item name="check_lastname">[a-zA-Z]{3,12}</item>
+        <item name="check_password">[a-zA-Z0-9]{4,12}</item>
+    </string-array>
+    
+	<!-- Validation Error Messages -->
+	<string-array name="validation_errors">
+        <item name="error_email">Unbekanntes Email Format, keine Leerzeichen erlaubt</item>
+        <item name="error_firstname">3&#8211;12 Buchstaben, keine Leerzeichen erlaubt</item>
+        <item name="error_lastname">3&#8211;12 Buchstaben, keine Leerzeichen erlaubt</item>
+        <item name="error_password">4&#8211;12 alphanumerische Buchstaben, keine Keerzeichen erlaubt</item>
+        <item name="error_password_doublecheck">Passwörter stimmen nicht überein</item>
+    </string-array>
+	
+	<!-- Status Messages -->
+	<string-array name="status_messages">
+        <item name="connection_checking">Prüfe Internetverbindung&#8230;</item>
+        <item name="connection_error">Keine Internetverbindung oder EMuRgency server nicht erreichbar.</item>
+    </string-array>
+    
+	<string name="registration_error">Fehlerhafte Registrierung</string>
+    <string name="registration_exists">Benutzer ist schon bereits registriert</string>
+    <string name="registration_title">Registrierung</string>
+    <string name="registration_loading">Registriere neuen Benutzer</string>
+    <string name="registration_success">Benutzer erfolgreich registriert.</string>
+    
+    <string name="login_loading_title">Verbinden</string>
+    <string name="login_loading_message">Bitte warten&#8230;</string>
+    <string name="login_invalid_title">Fehler bei der Anmeldung</string>
+    <string name="login_invalid_message">Konnte nicht anmelden. Falsche Email oder Passwort</string>
+    <string name="login_error">Anmeldungsfehler</string>
+    
+    <string name="case_alert_title">Fall beendet</string>
+    <string name="case_alert_text_shutdown">Dieser Fall wurde vom Server beendet</string>
+    
+    <!-- NO TRANSLATION NEEDED. STANDART SYSTEM VALUES -->
+    <string name="button_neutral">@android:string/ok</string>
+    <string name="button_positive">@android:string/yes</string>
+    <string name="button_negative">@android:string/no</string>
+    <string name="button_positive_ok">@android:string/ok</string>
+    <string name="button_negative_cancel">@android:string/cancel</string>
+	
+	<!-- DEBUG -->
+	<string name="default_address">Unbekannte Adresse</string>
+	<string name="default_time">00:00</string>
+	<string name="default_distance">0</string>
+	<string name="default_volunteers">0</string>
+	
+	<!-- API keys -->
+    <string name="mapsApiKeyDebug">0R4jGI1QSFRNazpM0Ne2riQeQLr_3X9HJxf1NyA</string>
+    <string name="mapsApiKeyProd"></string>
+</resources>

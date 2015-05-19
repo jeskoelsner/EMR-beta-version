@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+	    <layer-list>
+			<item android:bottom="20dp">
+				<bitmap android:src="@drawable/button_volunteer_transparent" 
+				    android:dither="true"
+				    android:filter="true"
+				    android:gravity="center"/>
+		    </item>
+			<item>
+				<shape android:shape="rectangle">
+					<solid android:color="@color/toolbar_pressed" />
+					<padding 
+					    android:bottom="8dp"/> 
+					<corners 
+					    android:bottomRightRadius="6dp" 
+					    android:bottomLeftRadius="6dp" 
+					    android:topLeftRadius="6dp" 
+					    android:topRightRadius="6dp"/>
+				</shape>
+			</item>
+		</layer-list>
+	</item>
+	<item android:state_checked="true">
+	    <layer-list>
+			<item android:bottom="20dp">
+				<bitmap android:src="@drawable/button_volunteer" 
+				    android:dither="true"
+				    android:filter="true"
+				    android:gravity="center"/>
+		    </item>
+		    <item android:bottom="71dp">
+				<shape android:shape="rectangle">
+					<solid android:color="@color/toggle_highlight" />
+					<padding 
+					    android:bottom="13dp" />
+				</shape>
+			</item>
+		</layer-list>
+	</item>
+	<item>
+	    <layer-list>
+			<item android:bottom="20dp">
+				<bitmap android:src="@drawable/button_volunteer" 
+				    android:dither="true"
+				    android:filter="true"
+				    android:gravity="center"/>
+		    </item>
+		    <item>
+				<shape android:shape="rectangle">
+					<solid android:color="@color/transparent" />
+					<padding 
+					    android:bottom="13dp"/>
+				</shape>
+			</item>
+		</layer-list>
+	</item>
+	
+</selector>

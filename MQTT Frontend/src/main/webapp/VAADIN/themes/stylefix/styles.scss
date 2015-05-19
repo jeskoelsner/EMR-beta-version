@@ -1,0 +1,7 @@
+@import "../reindeer/reindeer.scss";
+
+@include reindeer;
+
+.pac-container {
+	z-index: 12000!important;
+}

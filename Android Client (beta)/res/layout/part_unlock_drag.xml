@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.zlwima.emurgency.mqtt.android.ui.UnlockDrag 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="70dp"
+	android:layout_height="70dp"
+	android:layout_alignParentLeft="true"
+	android:layout_marginLeft="2dp"
+	android:layout_marginRight="2dp"
+	android:layout_marginBottom="2dp"
+	android:layout_marginTop="3dp"
+	style="@style/dragButton" 
+/>

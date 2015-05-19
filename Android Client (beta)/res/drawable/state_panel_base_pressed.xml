@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item>
+    <!-- Grey Background : border line bottom in grey -->
+        <shape android:shape="rectangle">
+            <solid android:color="#22000000"/>
+            <padding
+                android:left="0dp"
+                android:top="0dp"
+                android:right="0dp"
+                android:bottom="1dp" />
+        </shape>
+    </item>
+    <item>
+    <!-- Black Blue Status Panel Background : base colored -->
+        <shape android:shape="rectangle">
+            <solid android:color="#FF2A3845"/>
+        </shape>
+    </item>
+    <item android:top="0dp" android:bottom="50dp">
+	<!-- activity shade : on main panel -->
+		<shape android:shape="rectangle">
+			<solid android:color="#55FFFFFF" /> 
+		</shape>
+	</item>
+	<item android:top="0dp" android:bottom="50dp" android:left="5dp">
+	<!-- Silver Gradient : main panel -->
+		<shape android:shape="rectangle">
+			<solid android:color="@color/base_white" /> 
+		</shape>
+	</item>
+	<item android:top="73dp" android:bottom="50dp">
+	<!-- 3d shade : on main panel -->
+		<shape android:shape="rectangle">
+			<solid android:color="#33000000" /> 
+		</shape>
+	</item>
+</layer-list>

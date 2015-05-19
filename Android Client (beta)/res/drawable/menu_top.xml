@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<item>
+	    <layer-list>
+		    <item>
+		    <!-- Grey Background : border line bottom in grey -->
+		        <shape android:shape="rectangle">
+		            <solid android:color="#80000000"/>
+		        </shape>
+		    </item>
+			<item android:top="71dp" android:bottom="2dp">
+			<!-- 3d shade : on main panel -->
+				<shape android:shape="rectangle">
+					<solid android:color="#33000000" /> 
+				</shape>
+			</item>
+			<item android:top="75dp">
+			<!-- 3d shade : on main panel -->
+				<shape android:shape="rectangle">
+					<solid android:color="#FFdc1313" /> 
+				</shape>
+			</item>
+		</layer-list>
+	</item>
+	
+</selector>

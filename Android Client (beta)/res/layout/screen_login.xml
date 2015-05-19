@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:id="@+id/loginRoot">
+    <ScrollView 
+        android:layout_height="wrap_content" 
+        android:layout_width="fill_parent"
+        android:layout_centerInParent="true">
+	    <RelativeLayout
+	        android:layout_height="wrap_content" 
+	        android:layout_width="fill_parent">
+	    	<ImageView 
+			    android:id="@+id/logo"
+			    android:layout_width="fill_parent" 
+			    android:layout_height="wrap_content" 
+			    android:src="@drawable/logo"
+			    android:focusable="true"
+			    android:focusableInTouchMode="true"
+			    /><!-- set focus on image, to not show the keyboard instantly -->
+			<ImageView 
+			    android:id="@+id/logoTitle"
+			    android:layout_width="fill_parent" 
+			    android:layout_height="wrap_content" 
+			    android:src="@drawable/logo_title"
+			    
+			    android:layout_below="@id/logo"
+			    android:layout_marginTop="20dp"/>
+			<EditText
+			    android:id="@+id/formEmail" 
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    
+			    android:hint="@string/login_email_hint"
+			    android:inputType="textEmailAddress"
+	
+			    android:layout_below="@id/logoTitle"
+			    android:layout_marginTop="20dp"
+			    style="@style/inputText"/>
+			<EditText
+			    android:id="@+id/formPassword" 
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    
+			    android:hint="@string/login_passwort_hint"
+			    android:inputType="textPassword"
+			    
+			    android:layout_below="@id/formEmail"
+			    android:layout_marginTop="20dp"
+			    style="@style/inputText"/>    
+			<CheckBox 
+			    android:id="@+id/formCheckSave"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    
+			    android:layout_below="@id/formPassword"
+			    android:layout_marginTop="10dp"
+			    android:layout_marginBottom="10dp"
+			    
+			    android:text="@string/login_save_hint"
+			    
+			    style="@style/inputCheckbox"/>
+			<Button 
+			    android:id="@+id/buttonLogin"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    
+			    android:text="@string/button_login_text"
+			    
+			    android:layout_below="@id/formCheckSave"
+			    android:layout_marginLeft="20dp"
+			    android:layout_alignParentLeft="true"
+			    
+			    style="@style/inputButton"
+			    />
+			
+			<Button 
+			    android:id="@+id/buttonRegister"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    
+			    android:text="@string/button_register_text"
+			    
+			    android:layout_below="@id/formCheckSave"
+			    android:layout_marginRight="20dp"
+			    android:layout_alignParentRight="true"
+			    
+			    style="@style/inputButton"
+			    />
+		</RelativeLayout>
+	</ScrollView>	
+</RelativeLayout>

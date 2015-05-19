@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+	<item>
+		<nine-patch android:src="@drawable/button_shadow" android:dither="true" />
+    </item>
+	<item>
+		<shape android:shape="rectangle">
+			<solid android:color="@color/button_border" /> 
+			<padding
+                android:left="1dp"
+                android:top="0dp"
+                android:right="1dp"
+                android:bottom="3dp" />
+			<corners 
+			    android:bottomRightRadius="4dp" 
+			    android:bottomLeftRadius="4dp" 
+			    android:topLeftRadius="4dp" 
+			    android:topRightRadius="4dp"/>
+		</shape>
+	</item>
+	<item>
+		<shape android:shape="rectangle">
+			<solid android:color="@color/button_line" /> 
+			<padding
+                android:left="0dp"
+                android:top="1dp"
+                android:right="0dp"
+                android:bottom="0dp" />
+			<corners 
+			    android:bottomRightRadius="4dp" 
+			    android:bottomLeftRadius="4dp" 
+			    android:topLeftRadius="4dp" 
+			    android:topRightRadius="4dp"/>
+		</shape>
+	</item>
+	<item>
+		<shape android:shape="rectangle">
+			<gradient 
+			    android:startColor="@color/button_gradient_top" 
+			    android:endColor="@color/button_gradient_bottom" 
+			    android:angle="270"/> 
+			<padding
+                android:left="4dp"
+                android:top="4dp"
+                android:right="4dp"
+                android:bottom="4dp" />
+			<corners 
+			    android:bottomRightRadius="4dp" 
+			    android:bottomLeftRadius="4dp" 
+			    android:topLeftRadius="4dp" 
+			    android:topRightRadius="4dp"/> 
+		</shape>
+	</item>
+</layer-list>

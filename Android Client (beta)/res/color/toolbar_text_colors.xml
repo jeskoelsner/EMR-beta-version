@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <item android:state_pressed="true" android:color="@color/toolbar_text_color_pressed"/>
+    <item android:state_checked="false" android:color="@color/toolbar_text_color_deactivated"/>
+    <item android:color="@color/toolbar_text_color"/>
+
+</selector>

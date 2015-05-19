@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+  
+    <xmlproperty file="AndroidManifest.xml" prefix="mymanifest" collapseAttributes="true"/>
+    <target name="-post-build">
+        <echo>Version is ${mymanifest.manifest.android:versionName}</echo>
+        <echo>Output file ${out.final.file} copied to ${out.absolute.dir}\android-${mymanifest.manifest.android:versionName}.apk</echo>
+        <copy file="${out.final.file}" tofile="${out.absolute.dir}\android-${mymanifest.manifest.android:versionName}.apk" />
+    </target>
+
+</project> 

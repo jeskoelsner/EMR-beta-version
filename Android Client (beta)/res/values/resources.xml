@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="EnhancedRelativeLayout"> 
+        <attr name="active" format="boolean" />
+    </declare-styleable>
+     
+	<declare-styleable name="UnlockView">
+	    <!-- Usually same unlockpoint as the drag button width. 
+	    	 Buffer adds more room for fluid interaction -->
+		<attr name="unlockBuffer" format="integer" />
+		
+	</declare-styleable>
+</resources>

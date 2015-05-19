@@ -1,0 +1,90 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+		  package="org.zlwima.emurgency.mqtt"
+		  android:versionCode="1"
+		  android:versionName="1.0"
+		  android:installLocation="preferExternal"> 
+    
+	<uses-sdk android:minSdkVersion="10" android:targetSdkVersion="15" />
+        
+        <uses-feature
+            android:glEsVersion="0x00020000"
+            android:required="true"/>
+
+        <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"></uses-permission>        
+        <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+        <uses-permission android:name="android.permission.INTERNET"></uses-permission> 
+        <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+        
+        <uses-permission android:name="android.permission.WAKE_LOCK"></uses-permission>
+	
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>	
+        
+        <uses-permission android:name="android.permission.READ_SMS"></uses-permission>
+        <uses-permission android:name="android.permission.RECEIVE_SMS"></uses-permission>
+	
+	<application
+		android:name=".MqttApplication"
+		android:icon="@drawable/ic_launcher"
+		android:label="@string/app_name"
+		android:theme="@style/EmurgencyTheme" >
+		
+		<service android:name=".service.MqttService" ></service> 
+		<service android:name=".service.RestService" ></service>	
+                <service android:name=".service.LocationIntentService"></service>
+                <service android:name=".service.UpdateAppService"></service>
+                		
+		<activity
+			android:name=".android.LoginActivity"
+			android:screenOrientation="portrait" 
+			android:configChanges="orientation|keyboardHidden"
+			android:theme="@style/EmurgencyBlue" >
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>			
+		</activity>
+		
+		<activity
+			android:name=".android.RegistrationActivity"
+			android:theme="@style/EmurgencyBlue" >
+		</activity>
+		
+                <activity
+			android:name=".android.SmsActivity"
+                        android:screenOrientation="portrait" 
+			android:theme="@style/EmurgencyBlue" >
+		</activity>
+                
+		<activity
+			android:name=".android.DashboardActivity"
+			android:screenOrientation="portrait" 
+			android:configChanges="orientation|keyboardHidden"
+			android:theme="@style/EmurgencyBlue" >
+		</activity>			
+		
+		<activity
+			android:name=".android.MissionActivity"
+			android:screenOrientation="portrait" 
+			android:configChanges="orientation|keyboardHidden"
+                        android:launchMode="singleTop"
+			android:theme="@style/EmurgencyTransparent" >
+		</activity>
+		
+		<activity android:name=".android.NotificationActivity" />
+                
+                <!--
+                <meta-data
+                    android:name="com.google.android.maps.v2.API_KEY"
+                    android:value="AIzaSyCSPTrkI5JhDpjSiAqHXSvzQjZvn7xbVA8" /> -->
+                <meta-data
+                    android:name="com.google.android.maps.v2.API_KEY"
+                    android:value="AIzaSyBtVMlnpaBjKJxc753a7j5Upja4WQZYd1U" />
+                
+                <meta-data 
+                    android:name="com.google.android.gms.version" 
+                    android:value="@integer/google_play_services_version" />
+                
+	</application>
+
+</manifest>

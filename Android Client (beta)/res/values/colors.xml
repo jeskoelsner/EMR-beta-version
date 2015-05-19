@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="base_blue">#FF6298CF</color>
+    <color name="base_red">#FF6298CF</color>
+    <color name="base_lightblue">#FF6298CF</color>
+    <color name="base_bluewhite">#FFEEF2FB</color>
+    <color name="base_white">#FFFFFFFF</color>
+    <color name="base_green">#FF6298CF</color>
+    <color name="base_dark">#FF2a3845</color>
+    
+    
+    <color name="base_black">#FF000000</color>
+    <color name="base_semiblack">#80000000</color>
+    <color name="base_semiwhite">#80FFFFFF</color>
+    <color name="base_transwhite">#10FFFFFF</color>
+    <color name="base_transblack">#DD000000</color>
+    <color name="base_transparent_grey">#40000000</color>
+    <color name="base_strongtransparent_grey">#11000000</color>
+    
+    <color name="transparent">#00000000</color>
+    <color name="toggle_pressed">#FFEEF2FB</color>
+    <color name="toggle_highlight">#CCFF0000</color>
+    
+    <color name="text_splash">#FF9BC3FF</color>
+    <color name="text_color">#FFFFFFFF</color>
+    <color name="text_list">#AA000000</color>
+    <color name="text_hint">#FFC6C6C6</color>
+    
+    <color name="shadow_color">#CC000000</color>
+    <color name="shadow_strong">#FF000000</color>
+    
+    <color name="gradient_center">#00000000</color>
+    <color name="gradient_outside">#FF000000</color>
+    <color name="gradient_slight">#11000000</color>
+    
+    <color name="border">#FF4677A9</color>
+    <color name="border_pressed">#FF3A6A9C</color>
+    <color name="border_focused">#FF669ACF</color>
+    
+    <color name="button_text_color_pressed">#AAFFFFFF</color>
+    <color name="button_text_color">#FFFFFFFF</color>
+    
+    <color name="toolbar_text_color_pressed">#AAFFFFFF</color>
+    <color name="toolbar_text_color_deactivated">#FFFFFFFF</color>
+    <color name="toolbar_text_color">#FFFFFFFF</color>
+
+    <color name="button_border">#FF235384</color>
+    
+    <color name="button_border_pressed">#FF244e78</color>
+    <color name="button_line">#FF79afe6</color>
+    <color name="button_line_pressed">#FF4f87be</color>
+    <color name="button_gradient_top">#FF6298cf</color>
+    <color name="button_gradient_bottom">#FF447db7</color>
+    <color name="button_gradient_top_pressed">#FF3d75ac</color>
+    <color name="button_gradient_bottom_pressed">#FF295e95</color>
+    
+    <color name="status_green">#FF239f38</color>
+    <color name="status_line_green">#FF3bb750</color>
+    <color name="status_border_green">#FF1c6929</color>
+    <color name="status_green_pressed">#FF1e5c12</color>
+    <color name="status_line_green_pressed">#FF36742a</color>
+    <color name="status_border_green_pressed">#FF14430b</color>
+    <color name="status_red">#FFd0151b</color>
+    <color name="status_line_red">#FFe82d33</color>
+    <color name="status_border_red">#FF8f2225</color>
+    <color name="status_red_pressed">#FFad1015</color>
+    <color name="status_line_red_pressed">#FFc5282d</color>
+    <color name="status_border_red_pressed">#FF7d0f13</color>
+    
+    <color name="panel_text_color">#FF434343</color>
+    <color name="panel_text_subcolor">#FFFFFFFF</color>
+    
+    <color name="toolbar_pressed">#20000000</color>
+    
+    
+</resources>

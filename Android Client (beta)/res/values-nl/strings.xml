@@ -1,0 +1,128 @@
+<resources>
+    <string name="app_name">Emurgency</string>
+    <string name="full_app_name">EMuRgency</string>
+    <string name="menu_settings">Instellingen</string>
+    <string name="title_activity_splash">Emurgency</string>
+
+    <string name="case_notification">Emurgency gevallen ontvangen</string>
+
+    <string name="splashscreen_checking_connection">Controleren internet verbinding…</string>
+    <string name="splashscreen_checking_downtime">Geen internet verbinding of EMuRgency server downtime?!</string>
+
+    <string name="login_email_hint">Login E-mail</string>
+    <string name="login_passwort_hint">Wachtwoord</string>
+    <string name="login_save_hint">Onthoud mail op login</string>
+    <string name="button_login_text"> Inloggen </string>
+    <string name="button_help">Hulp</string>
+    <string name="button_register_text">Registreer</string>
+    <string name="button_registersubmit_text">Indienen Registratie</string>
+    <string name="dashboard_toggle_on">
+        <i>Info</i>
+        <b>Geval</b>
+    </string>
+    <string name="dashboard_toggle_off">
+        <b>Info</b>
+        <i>Geval</i>
+    </string>
+    <string name="user_verified">Gebruiker \nStatus</string>
+    <string name="toolbar_stream">Nieuws</string>
+    <string name="toolbar_cases">Gevallen</string>
+    <string name="toolbar_help">Snelle hulp</string>
+    <string name="toolbar_settings">Instellingen</string>
+    <string name="toolbar_arrived">Aangekomen bij gevallen!</string>
+    <string name="toolbar_logout">Afmelden</string>
+    <string name="toolbar_volunteers">Vrijwilligers</string>
+    <string name="toolbar_route">Route</string>
+    <string name="toolbar_autozoom">Autozoom</string>
+    <string name="case_volunteers">Vrijwilligers</string>
+    <string name="case_time">Min.</string>
+    <string name="case_distance_meters">m</string>
+    <string name="case_distance_kilometers">km</string>
+    <string name="case_distance_meters_full">Meters</string>
+    <string name="case_distance_kilometers_full">kilom.</string>
+    <string name="unlocker_text">Schuif naar Accepteren</string>
+
+    <string name="bubble_waiting_activity_stream">Wachten op Activiteit Stroom…</string>
+    <string name="bubble_no_sim">GEEN SIM \n Expected trage locatie-updates</string>
+    <string name="bubble_status_level_prefix">Statuslevel:</string>
+    <string name="bubble_result_null">Resultaat was NULL</string>
+    <string name="bubble_backbutton_disabled">Back Button uitgeschakeld \nU aanvaardde deze missie</string>
+    <string name="bubble_homebutton_disabled">Home Button uitgeschakeld \nU aanvaardde deze missie</string>
+
+    <string name="dialog_logout_title">Afmelden</string>
+    <string name="dialog_logout_message">Wil je echt wil uitloggen ?</string>
+    <string name="dialog_quit_title">Exit Emurgency</string>
+    <string name="dialog_quit_message">Wil je echt de applicatie te sluiten?</string>
+    <string name="dialog_visit_title">Bezoek Homepage</string>
+    <string name="dialog_visit_message">Wilt u Emurgency homepage te bezoeken?</string>
+
+    <string name="dialog_resolution_error_title">Connection Failure</string>
+    <string name="dialog_resolution_error_message">Resolutie voor Google Mobile Services Connection Failure gevonden ... Proberen om weer !</string>
+    <string name="dialog_resolution_notfound_message"> Verbinding mislukt . Resolutie te mislukken niet gevonden</string>
+
+    <string name="dialog_playservice_disconnected_title">Disconnected</string>
+    <string name="dialog_playservice_disconnected_message">Google Play Service losgekoppeld ...</string>
+
+    <string name="dialog_update_title">Update beschikbaar</string>
+    <string name="dialog_update_message">Er is een nieuwe versie beschikbaar is. Wilt u het te installeren?</string>
+
+    <string name="regFirstNameHint">Voornaam</string>
+    <string name="regLastNameHint">Achternaam</string>
+    <string name="regEmailHint">E-mailadres</string>
+    <string name="regPassHint">Wachtwoord</string>
+    <string name="regPassValidHint">Herhaal wachtwoord</string>
+
+    <string name="empty_case">Geen actieve gevallen op het moment…</string>
+
+    <!-- Validation Pattern Check -->
+    <string-array name="validation_patterns">
+    <item name="check_email">([a-zA-Z0-9_.-\+])+@(([a-zA-Z0-9-])+.)+([a-zA-Z0-9]{2,4})+</item>
+    <item name="check_firstname">[a-zA-Z]{3,12}</item>
+    <item name="check_lastname">[a-zA-Z]{3,12}</item>
+    <item name="check_password">[a-zA-Z0-9]{4,12}</item>
+    </string-array>
+
+    <string-array name="validation_errors">
+    <item name="error_email">Ongeldig e-mailadres patroon, geen spaties</item>
+    <item name="error_firstname">3-12 letters, zonder spaties</item>
+    <item name="error_lastname">3-12 letters, zonder spaties</item>
+    <item name="error_password">4-12 alfanumerieke letters, geen spaties</item>
+    <item name="error_password_doublecheck">Wachtwoorden doet\'t wedstrijd</item>
+    </string-array>
+    <string-array name="status_messages">
+    <item name="connection_checking">Controleren internet verbinding...</item>
+    <item name="connection_error">Kon internet verbinding of EMuRgency server downtime niet vast te stellen.</item>
+    </string-array>
+    
+    <string name="registration_error">Ongeldige Registratie</string>
+    <string name="registration_exists">Gebruiker bestaat al</string>
+    <string name="registration_title">Registratie</string>
+    <string name="registration_loading">Registreren nieuwe gebruiker</string>
+    <string name="registration_success">Gebruiker toegevoegd aan de database</string>
+
+    <string name="login_loading_title">Aansluiten</string>
+    <string name="login_loading_message">Even geduld…</string>
+    <string name="login_invalid_title">Verkeerde login</string>
+    <string name="login_invalid_message">Kan niet inloggen. Verkeerde e-mail of wachtwoord</string>
+    <string name="login_error">Login Fout</string>
+
+    <string name="case_alert_title">Gevallen gesloten</string>
+    <string name="case_alert_text_shutdown">Deze gevallen was gesloten server side</string>
+
+    <!-- NO TRANSLATION NEEDED. STANDART SYSTEM VALUES -->
+    <string name="button_neutral">@android:string/ok</string>
+    <string name="button_positive">@android:string/yes</string>
+    <string name="button_negative">@android:string/no</string>
+    <string name="button_positive_ok">@android:string/ok</string>
+    <string name="button_negative_cancel">@android:string/cancel</string>
+
+    <!-- DEBUG -->
+    <string name="default_address">Unbekannte Adresse</string>
+    <string name="default_time">00:00</string>
+    <string name="default_distance">0</string>
+    <string name="default_volunteers">0</string>
+
+    <!-- API keys -->
+    <string name="mapsApiKeyDebug">0R4jGI1QSFRNazpM0Ne2riQeQLr_3X9HJxf1NyA</string>
+    <string name="mapsApiKeyProd"></string>
+</resources>

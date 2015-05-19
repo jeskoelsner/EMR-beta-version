@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:id="@+id/missionRoot"
+    android:layout_height="fill_parent" >
+	
+<!--
+
+	<com.google.android.maps.MapView
+		android:id="@+id/mapView"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:apiKey="0R4jGI1QSFRNazpM0Ne2riQeQLr_3X9HJxf1NyA"
+		android:clickable="false" >
+	</com.google.android.maps.MapView>	
+        	
+-->
+
+        <fragment
+            android:id="@+id/map_fragment"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:name="com.google.android.gms.maps.MapFragment"/>
+	
+	<RelativeLayout 
+		android:id="@+id/unlockScreen"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+	    
+		android:layout_alignParentBottom="true"
+		android:layout_alignParentTop="true"
+		android:paddingTop="85dp"
+		android:paddingBottom="78dp"
+		style="@style/mapsLockOverlay">
+	    
+		<org.zlwima.emurgency.mqtt.android.ui.UnlockView 
+			android:id="@+id/unLocker"
+			android:layout_width="fill_parent"
+			android:layout_height="75dp"
+			android:background="@drawable/drag_background"
+			android:layout_alignParentBottom="true"
+			android:layout_margin="15dp" >
+			<!-- <TextView 
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:text="@string/unlocker_text"
+			android:textSize="26sp"
+			android:gravity="center"
+			android:textColor="@color/base_semiwhite"
+			/>
+		<org.zlwima.emurgency.android.ui.UnlockDrag
+			android:layout_width="70dp"
+			android:layout_height="70dp"
+			android:layout_alignParentLeft="true"
+			android:layout_marginLeft="2dp"
+			android:layout_marginRight="2dp"
+			android:layout_marginBottom="2dp"
+			android:layout_marginTop="3dp"
+			style="@style/dragButton"
+			/> -->
+		</org.zlwima.emurgency.mqtt.android.ui.UnlockView>
+	</RelativeLayout>
+	
+	<LinearLayout
+		android:id="@+id/missionMenuTop"
+		android:layout_width="fill_parent"
+		android:weightSum="1.0"
+		android:paddingBottom="2dp"
+	    
+		android:layout_alignParentTop="true"
+		style="@style/mapsMenuTop">
+		<ViewSwitcher android:id="@+id/flipBack"
+					  android:layout_width="0dp"
+					  android:layout_weight="0.20"
+					  android:layout_height="fill_parent" >
+			<Button android:id="@+id/caseBack"
+					android:layout_width="fill_parent"
+					android:layout_height="fill_parent"
+					android:gravity="center"
+					android:text=""
+					android:background="@drawable/toolbar_back"
+			/>
+			<LinearLayout 
+				android:id="@+id/caseVolunteersPanel"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:orientation="vertical"
+				android:gravity="center"
+				android:paddingBottom="5dp" >
+				<TextView 
+					android:id="@+id/caseVolunteers"
+					android:layout_width="fill_parent"
+					android:layout_height="24dp"
+					android:gravity="center"
+					android:textSize="26sp"
+					android:textStyle="bold"
+					android:textColor="@color/base_white"
+					style="@style/shadowed"
+					android:text="@string/default_volunteers"/>
+				<TextView android:id="@+id/caseVolunteersHint"
+						  android:layout_width="fill_parent"
+						  android:layout_height="15dp"
+						  android:gravity="center"
+						  android:textSize="16sp"
+						  android:textColor="@color/base_white"
+						  style="@style/shadowed"
+						  android:text="@string/case_volunteers"/>
+			</LinearLayout>
+		</ViewSwitcher>
+		<View android:layout_width="1dp"
+			  android:layout_height="fill_parent"
+			  android:background="@color/base_transwhite" />
+		<TextView 
+			android:id="@+id/caseAddress"
+			android:layout_width="0dp"
+			android:layout_weight="0.60"
+			android:layout_height="fill_parent" 
+			android:gravity="center_vertical|left"
+			android:paddingBottom="5dp"
+			android:paddingLeft="15dp"
+			android:paddingRight="15dp"
+			android:text="@string/default_address"
+			android:background="@color/toolbar_pressed"
+			style="@style/caseAddressWhite"/>
+		<View android:layout_width="1dp"
+			  android:layout_height="fill_parent"
+			  android:background="@color/base_transwhite" />
+		<LinearLayout 
+			android:id="@+id/caseMetersPanel"
+			android:layout_width="0dp"
+			android:layout_weight="0.20"
+			android:layout_height="fill_parent"
+			android:orientation="vertical"
+			android:gravity="center"
+			android:paddingBottom="5dp" >
+			<TextView android:id="@+id/caseMeters"
+					  android:layout_width="fill_parent"
+					  android:layout_height="24dp"
+					  android:gravity="center"
+					  android:textSize="26sp"
+					  android:textStyle="bold"
+					  android:textColor="@color/base_white"
+					  style="@style/shadowed"
+					  android:text="@string/default_distance"/>
+			<TextView android:id="@+id/caseMetersHint"
+					  android:layout_width="fill_parent"
+					  android:layout_height="15dp"
+					  android:gravity="center"
+					  android:textSize="16sp"
+					  android:textColor="@color/base_white"
+					  style="@style/shadowed"
+					  android:text="@string/case_distance_meters"/>
+		</LinearLayout>
+	</LinearLayout>
+	
+	<LinearLayout 
+		android:layout_below="@id/missionMenuTop"
+		android:layout_marginTop="15dp"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center" >
+		<Chronometer
+			android:id="@+id/caseTimer"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="22dp"
+			android:textStyle="bold"
+			android:textColor="@color/base_white"
+			android:layout_marginRight="5dp"
+			style="@style/shadowed" />
+		<TextView 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="20dp"
+			android:textColor="@color/base_white"
+			style="@style/shadowed"
+			android:text="@string/case_time" />
+	</LinearLayout>
+	
+	<LinearLayout
+		android:id="@+id/missionMenuBottom"
+		android:layout_width="fill_parent"
+		android:weightSum="1.0"
+		android:paddingTop="2dp"
+		android:gravity="left"
+		android:layout_alignParentBottom="true"
+		style="@style/mapsMenuBottom">
+		<ToggleButton
+			android:id="@+id/toolbarRoute" 
+			android:layout_weight=".25"
+			android:layout_height="fill_parent"
+			android:layout_width="0dp"
+			android:visibility="gone"
+		    
+			android:layout_marginRight="0dp"
+			android:layout_marginLeft="0dp"
+			android:layout_marginTop="0dp"
+			android:layout_marginBottom="0dp"
+
+			android:layout_gravity="top"
+			android:gravity="bottom|center"
+		    
+			android:textOn="@string/toolbar_route"
+			android:textOff="@string/toolbar_route"
+			style="@style/toolbarRoute"/>
+		<ToggleButton
+			android:id="@+id/toolbarVolunteers" 
+			android:layout_weight=".25"
+			android:layout_height="fill_parent"
+			android:layout_width="0dp"
+		    
+			android:layout_marginRight="0dp"
+			android:layout_marginLeft="0dp"
+			android:layout_marginTop="0dp"
+			android:layout_marginBottom="0dp"
+
+			android:layout_gravity="top"
+			android:gravity="bottom|center"
+		    
+			android:textOn="@string/toolbar_volunteers"
+			android:textOff="@string/toolbar_volunteers"
+			style="@style/toolbarVolunteers"/>
+		<ToggleButton
+			android:id="@+id/toolbarAutozoom" 
+			android:layout_weight=".25"
+			android:layout_height="fill_parent"
+			android:layout_width="0dp"
+		    
+			android:layout_marginRight="0dp"
+			android:layout_marginLeft="0dp"
+			android:layout_marginTop="0dp"
+			android:layout_marginBottom="0dp"
+
+			android:layout_gravity="top"
+			android:gravity="bottom|center"
+		    
+			android:textOn="@string/toolbar_autozoom"
+			android:textOff="@string/toolbar_autozoom"
+			style="@style/toolbarAutozoom"/>
+		<Button
+			android:id="@+id/toolbarHelp" 
+			android:layout_weight=".25"
+			android:layout_height="fill_parent"
+			android:layout_width="0dp"
+		    
+			android:layout_marginRight="0dp"
+			android:layout_marginLeft="0dp"
+			android:layout_marginTop="0dp"
+			android:layout_marginBottom="0dp"
+
+			android:layout_gravity="top"
+			android:gravity="bottom|center"
+		    
+			android:text="@string/toolbar_help"
+			style="@style/toolbarHelp"/>
+                <Button
+			android:id="@+id/toolbarArrived" 
+			android:layout_weight=".50"
+			android:layout_height="fill_parent"
+			android:layout_width="0dp"
+		    
+			android:layout_marginRight="0dp"
+			android:layout_marginLeft="0dp"
+			android:layout_marginTop="0dp"
+			android:layout_marginBottom="0dp"
+
+			android:layout_gravity="top"
+			android:gravity="bottom|center"
+                        android:visibility="gone"
+		    
+			android:text="@string/toolbar_arrived"
+			style="@style/toolbarArrived"/>
+	</LinearLayout>
+	<RelativeLayout
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent" 
+		android:id="@+id/overlay"
+		android:layout_alignParentBottom="true"
+		android:layout_alignParentTop="true"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentRight="true"
+		android:paddingTop="75dp"
+		android:paddingBottom="75dp"
+		android:background="#77000000"
+		android:visibility="gone"
+		android:clickable="true">
+		<ImageView android:layout_width="fill_parent" android:layout_height="wrap_content"
+				   android:src="@drawable/overlay_mission_tbar" android:layout_alignParentTop="true"/>
+		<ImageView android:layout_width="fill_parent" android:layout_height="wrap_content"
+				   android:src="@drawable/overlay_mission_menu" android:layout_alignParentBottom="true"/>
+	</RelativeLayout>
+
+</RelativeLayout>

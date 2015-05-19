@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"  android:id="@+id/registrationRoot">
+    <RelativeLayout
+        android:layout_height="78dp" 
+        android:layout_width="fill_parent"
+        android:layout_alignParentTop="true"
+        android:id="@+id/topMenu"
+        android:background="@drawable/top_menu" >
+    	<ImageView 
+		    android:id="@+id/logo"
+		    android:layout_width="wrap_content" 
+		    android:layout_height="fill_parent" 
+		    android:src="@drawable/logo_small" 
+		    
+		    android:layout_alignParentLeft="true"
+		    android:layout_marginLeft="10dp"
+		    android:layout_marginRight="15dp" />
+		<ImageView 
+		    android:id="@+id/logoTitle"
+		    android:layout_width="wrap_content" 
+		    android:layout_height="fill_parent"
+		    android:src="@drawable/logo_title_small" 
+		    android:layout_toRightOf="@id/logo" />
+    </RelativeLayout>
+    <ScrollView
+        android:id="@+id/scroller"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topMenu"
+        android:layout_alignParentBottom="true"
+        android:background="@color/base_bluewhite" >
+		<LinearLayout android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical">
+			<EditText 
+	            android:id="@+id/regFirstName"
+			    android:hint="@string/regFirstNameHint"
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content"
+				android:inputType="textPersonName"
+				style="@style/inputRegistration" />
+		
+			<EditText 
+			    android:id="@+id/regLastName"
+			    android:hint="@string/regLastNameHint"
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content"
+				android:inputType="textPersonName"
+				style="@style/inputRegistration" />
+			
+			<EditText 
+			    android:id="@+id/regEmail"
+			    android:hint="@string/regEmailHint"
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content"
+				android:inputType="textEmailAddress"
+				style="@style/inputRegistration" />
+			
+			<EditText 
+			    android:id="@+id/regPass"
+			    android:hint="@string/regPassHint"
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content"
+				android:inputType="textPassword"
+				style="@style/inputRegistration" />
+			
+			<EditText 
+			    android:id="@+id/regPassValid"
+			    android:hint="@string/regPassValidHint"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:inputType="textPassword"
+				style="@style/inputRegistration" />
+			
+			<Button 
+			    android:id="@+id/buttonRegister"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_marginLeft="20dp"
+			    android:layout_marginRight="20dp"
+			    android:layout_marginTop="15dp"
+			    android:layout_marginBottom="5dp"
+			    android:text="@string/button_registersubmit_text"
+			    style="@style/inputButton"/>
+		</LinearLayout>
+    </ScrollView>
+    
+	
+</RelativeLayout>

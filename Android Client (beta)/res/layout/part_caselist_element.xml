@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="128dp"
+    android:descendantFocusability="blocksDescendants"
+    style="@style/listElement" >
+	
+	<TextView 
+		android:id="@+id/caseAddress"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="@string/default_address"
+		android:layout_marginTop="12dp"
+		android:layout_marginLeft="20dp"
+		android:lineSpacingMultiplier="1.05"
+		android:layout_alignParentLeft="true"
+		style="@style/caseAddress"
+	/>
+	
+	<ImageButton 
+            android:id="@+id/caseButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="23dp"
+            android:layout_marginRight="18dp"
+            android:background="@color/transparent"
+            android:src="@drawable/click_arrow" 
+	/>
+
+	<LinearLayout
+                android:id="@+id/subMenu"
+		android:layout_width="fill_parent"
+		android:layout_height="50dp"
+		android:paddingLeft="10dp"
+		android:paddingRight="10dp"
+		android:paddingBottom="5dp"
+		android:weightSum="1.0"
+		android:layout_alignParentBottom="true"
+		android:layout_alignParentLeft="true">
+	
+		<LinearLayout 
+			android:layout_width="0dp"
+			android:layout_height="fill_parent"
+			android:gravity="left"
+			android:layout_weight=".33">
+
+			<ImageView
+				android:layout_width="wrap_content"
+				android:layout_height="fill_parent"
+				android:layout_gravity="center"
+				android:src="@drawable/case_volunteer" 
+			/>
+
+			<TextView 
+				android:id="@+id/caseMiniVolunteers"
+				android:layout_width="wrap_content"
+				android:layout_height="fill_parent"
+				android:gravity="left|center_vertical"
+				android:text="@string/default_volunteers"
+				style="@style/caseValues"
+			/>
+			<TextView 
+				android:layout_width="wrap_content"
+				android:layout_height="fill_parent"
+				android:gravity="left|center_vertical"
+				android:text="@string/case_volunteers"
+				style="@style/caseSpec"
+			/>
+		</LinearLayout>
+                
+        
+		<LinearLayout 
+			android:layout_width="0dp"
+			android:layout_height="fill_parent"
+			android:gravity="center"
+			android:layout_weight=".33">
+			<ImageView
+				android:layout_width="wrap_content"
+				android:layout_height="fill_parent"
+				android:layout_gravity="center"
+				android:src="@drawable/case_timer" 
+			/>
+			<Chronometer 
+				android:id="@+id/caseMiniTimer"
+				android:layout_width="wrap_content"
+				android:layout_height="fill_parent"
+				android:gravity="left|center_vertical"
+				style="@style/caseValues"
+			/>
+			<TextView 
+				android:layout_width="wrap_content"
+				android:layout_height="fill_parent"
+				android:gravity="left|center_vertical"
+				android:text="@string/case_time"
+				style="@style/caseSpec"
+			/>
+		</LinearLayout>
+        
+		<LinearLayout 
+			android:layout_width="0dp"
+			android:layout_height="fill_parent"
+			android:gravity="right"
+			android:layout_weight=".33">
+			<ImageView
+				android:layout_width="wrap_content"
+				android:layout_height="fill_parent"
+				android:layout_gravity="center"
+				android:src="@drawable/case_distance" 
+			/>
+			<TextView 
+				android:id="@+id/caseMiniDistance"
+				android:layout_width="wrap_content"
+				android:layout_height="fill_parent"
+				android:gravity="left|center_vertical"
+				android:text="@string/default_distance"
+				style="@style/caseValues"
+			/>
+			<TextView
+				android:id="@+id/caseMiniDistanceBase" 
+				android:layout_width="wrap_content"
+				android:layout_height="fill_parent"
+				android:gravity="left|center_vertical"
+				android:text=""
+				style="@style/caseSpec"
+			/>
+		</LinearLayout>
+        
+	</LinearLayout>
+
+</RelativeLayout>
